@@ -56,6 +56,13 @@ int returnMinusNumberBin(int a, int b) {
 	printf("Output : %d", finalResult);
 }
 
+// 부호 처리가 가능한 함수.. 간단하게 하려면 이렇게 구현하는게 맞네요.
+int returnMinusNumberBin2(int num1,int num2) {
+	int result = 0;
+	result = num1 + (~num2 + 1); 
+	return result;
+}
+
 // 메인 함수
 int pracFunc2(void) {
 	int num1, num2;
